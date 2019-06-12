@@ -20,7 +20,7 @@ def where_lift_come(press):
     for i in lift:
         for flor in i:
             if flor == press:
-                return 1
+                return i[0]
 
 
 unittest.main()
