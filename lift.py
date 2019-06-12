@@ -15,6 +15,11 @@ class Test_Lift(unittest.TestCase):
         actual = where_lift_come(3)
         self.assertEqual(actual, expected)
 
+    def test_press_5_then_should_be_lift3(self):
+        expected = 3
+        actual = where_lift_come(5)
+        self.assertEqual(actual, expected)
+
 
 def where_lift_come(press):
     for i in lift:
