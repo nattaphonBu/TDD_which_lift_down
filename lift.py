@@ -11,8 +11,11 @@ class Test_Lift(unittest.TestCase):
         self.assertEqual(actual, expected)
 
 
-def where_lift_come(self):
-    pass
+def where_lift_come(press):
+    for i in lift:
+        for flor in i:
+            if flor == press:
+                return 1
 
 
 unittest.main()
