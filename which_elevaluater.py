@@ -13,9 +13,7 @@ class which_elevaluater(unittest.TestCase):
         self.assertEqual(actual, expected)
 
 def which_evaluater_down(flor, direction):
-        if flor == 1 and direction == 'up':
-            return 'eveluater1'
-        if flor == 2 and direction == 'up':
+        if flor == 1 and direction == 'up' or flor == 2 and direction == 'up':
             return 'eveluater1'
 
 unittest.main()
