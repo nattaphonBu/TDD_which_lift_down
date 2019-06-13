@@ -43,20 +43,11 @@ class which_elevaluater(unittest.TestCase):
 
 
 def which_evaluater_down(flor, direction):
-        if flor == 1 and direction == 'up' or flor == 2 and direction == 'up':
+        if flor == 1 and direction == 'up' or flor == 2 and direction == 'up' or flor == 2 and direction == 'down':
             return 'evaluater1'
-        if flor == 2 and direction == 'down':
-            return 'evaluater1'
-        if flor == 3 and direction == 'up':
+        if flor == 3 and direction == 'up' or flor == 3 and direction == 'down' or flor == 4 and direction == 'up':
             return 'evaluater2'
-        if flor == 3 and direction == 'down':
-            return 'evaluater2'
-        if flor == 4 and direction == 'up':
-            return  'evaluater2'
-        if flor == 4 and direction == 'down':
+        if flor == 4 and direction == 'down' or flor == 5 and direction == 'down':
             return 'evaluater3'
-        if flor == 5 and direction == 'down':
-            return 'evaluater3'
-
 
 unittest.main()
