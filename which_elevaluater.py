@@ -1,7 +1,7 @@
 import unittest
 
+# define evaluater [(1, 2), (2, 3), (3, 5)]
 class which_elevaluater(unittest.TestCase):
-
     def test_flor_1_Press_up_lift_1(self):
         expected = 'evaluater1'
         actual = which_evaluater_down(1, 'up')
@@ -36,6 +36,7 @@ class which_elevaluater(unittest.TestCase):
         expected = 'evaluater3'
         actual = which_evaluater_down(4, 'down')
         self.assertEqual(actual, expected)
+
     def test_flor_5_Press_down_lift_3(self):
         expected = 'evaluater3'
         actual = which_evaluater_down(5,'down')
@@ -49,5 +50,6 @@ def which_evaluater_down(flor, direction):
             return 'evaluater2'
         if flor == 4 and direction == 'down' or flor == 5 and direction == 'down':
             return 'evaluater3'
+
 
 unittest.main()
